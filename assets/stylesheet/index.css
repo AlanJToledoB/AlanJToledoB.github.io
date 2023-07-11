@@ -138,6 +138,7 @@ nav.nav_menu.not-active .flags {
     transform: translate(-50%, -50%);
     width: 3rem;
     cursor: pointer;
+    background-color: #dfdfdf;
 }
 
 #button span {
