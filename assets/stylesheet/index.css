@@ -322,6 +322,7 @@ span+span {
     display: none;
     width: 100%;
     text-align: center;
+    color: #dfdfdf;
 }
 
 .cv_button {
