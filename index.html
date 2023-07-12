@@ -100,6 +100,7 @@
         color: #555;
         display: flex;
         flex-wrap: wrap;
+        font-size: 12px;
     }
 
     .enlaces-footer-productos {
@@ -111,6 +112,7 @@
         /* Elimina el subrayado del enlace */
         color: inherit;
         /* Hereda el color del texto del contenedor padre */
+        font-size: 15px;
     }
 
     /* Estilos del preloader */
@@ -159,8 +161,9 @@
     opacity: 0;
   }
 }
-
-
+.puntos1-proyectos:hover, .puntos2-proyectos:hover{
+    opacity: 0.5;
+}
     @media (max-width: 768px) {
         .enlaces-footer-productos {
             width: 100%;
@@ -200,6 +203,8 @@
                 <div class="container_text-info">
                     <p class="home_text-1" data-section="home" data-value="home_text-1">Hola! Soy</p>
                     <p class="home_text-2">Alan Toledo</p>
+
+                    
                 </div>
 
                 <div class="tercer-titulo">
@@ -239,7 +244,10 @@
         </section>
 
         <!-- Sobre mí -->
+        <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos1-proyectos">
+        
         <section class="sobreMi" id="sobreMi">
+            
             <h1 data-section="sobre-mi" data-value="title">Sobre mí</h1>
 
             <div class="container_content-sobreMi">
@@ -272,6 +280,8 @@
 
         <!-- Habilidades -->
         <section class="habilidades" id="habilidades">
+            <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos1-proyectos">
+            <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos2-proyectos">
             <h1 data-section="habilidades" data-value="title">Habilidades para el desarrollo web</h1>
 
 
@@ -368,6 +378,8 @@
 
         <!-- Formación -->
         <section class="formacion" id="formacion">
+            <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos2-proyectos">
+            <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos1-proyectos">
             <h1 data-section="formacion" data-value="title">Experiencias Laborales</h1>
 
             <div class="cards_container--formacion">
@@ -405,8 +417,8 @@
         <section class="proyectos" id="proyectos">
             <h1 data-section="proyectos" data-value="title">Algunos Estudios</h1>
 
-            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-proyectos">
-            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-proyectos">
+            <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos1-proyectos">
+            <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos2-proyectos">
 
             <div class="cards_container--proyectos">
                 <div class="cards--proyectos card_JuegoAhorcado" data-aos="zoom-in-up"
@@ -505,18 +517,18 @@
         <section class="proyectos" id="proyectos">
             <h1 data-section="proyectos" data-value="title">Algunos Proyectos</h1>
 
-            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-proyectos">
-            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-proyectos">
+            <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos1-proyectos">
+            <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos2-proyectos">
 
             <div class="cards_container--proyectos">
                 <div class="cards--proyectos card_JuegoAhorcado" data-aos="zoom-in-up"
                     data-aos-anchor-placement="center-bottom">
                     <div class="container_imgCard--proyectos">
-                        <img src="./assets/images/cap-juegoAhorcado.png" alt="Proyecto: Juego del ahorcado">
+                        <img src="./assets/nuvas img/proyectos/escuela llano.jpg" alt="Proyecto: Juego del ahorcado">
                     </div>
 
                     <div class="container_textCard--proyectos">
-                        <h2 data-section="proyectos" data-value="title-proyecto1">Juego del Ahorcado</h2>
+                        <h2 data-section="proyectos" data-value="title-proyecto1">Sistema De previas "Llano"</h2>
                         <p data-section="proyectos" data-value="info-proyecto1">Un juego donde el usuario debe adivinar
                             la palabra secreta con un cierto número de oportunidades. La palabra se escoge de forma
                             aleatoria por el programa y el usuario perderá en el momento en que la horca se complete.
@@ -541,18 +553,18 @@
                 <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up"
                     data-aos-anchor-placement="center-bottom">
                     <div class="container_imgCard--proyectos">
-                        <img src="./assets/images/cap-portafolio.png" alt="Proyecto: Portafolio">
+                        <img src="./assets/nuvas img/proyectos/enriptador de texto.jpg" alt="Proyecto: Portafolio">
                     </div>
 
                     <div class="container_textCard--proyectos text-portafolio">
-                        <h2 data-section="proyectos" data-value="title-proyecto2">Portafolio</h2>
-                        <p data-section="proyectos" data-value="info-proyecto2">Mi portafolio web personal, donde se
-                            encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre
-                            mi formación.</p>
+                        <h2 data-section="proyectos" data-value="title-proyecto2"><br> Encriptador de Texto</h2>
+                        <p data-section="proyectos" data-value="info-proyecto2">Un ecriptador donde el usuario puede
+                            escribir un texto y el encriptador lo codifica con llaves ya programadas. El encriptador
+                            también permite desencriptar el texto.</p>
                     </div>
 
                     <div class="container_btn--proyectos">
-                        <a href="#" target="_blank">
+                        <a href="https://alanjtoledob.github.io/enciptador/" target="_blank">
                             <button class="btn_demo">
                                 Ver
                             </button>
@@ -569,18 +581,16 @@
                 <div class="cards--proyectos card_encriptador" data-aos="zoom-in-up"
                     data-aos-anchor-placement="center-bottom">
                     <div class="container_imgCard--proyectos">
-                        <img src="./assets/images/cap-encriptador.png" alt="Proyecto: Encriptador">
+                        <img src="./assets/nuvas img/proyectos/gestor de perfil.png" alt="Proyecto: Encriptador">
                     </div>
 
                     <div class="container_textCard--proyectos">
-                        <h2 data-section="proyectos" data-value="title-proyecto3">Encriptador de Texto</h2>
-                        <p data-section="proyectos" data-value="info-proyecto3">Un ecriptador donde el usuario puede
-                            escribir un texto y el encriptador lo codifica con llaves ya programadas. El encriptador
-                            también permite desencriptar el texto.</p>
+                        <h2 data-section="proyectos" data-value="title-proyecto3">Gestor De Perfiles</h2>
+                        <p data-section="proyectos" data-value="info-proyecto3">Un administrador de perfil web: acceso rápido a tus enlaces personales para compartir con otros y mostrar tu presencia en diferentes plataformas en línea.</p>
                     </div>
 
                     <div class="container_btn--proyectos">
-                        <a href="https://mariasmoun.github.io/Encriptador-de-texto/" target="_blank">
+                        <a href="https://alanjtoledob.github.io/gestor_perfiles/" target="_blank">
                             <button class="btn_demo">
                                 Ver
                             </button>
