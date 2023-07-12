@@ -17,6 +17,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Cooper Hewitt';   
 }
 
 html {
@@ -294,13 +295,34 @@ span+span {
     margin-bottom: 1rem;
     width: 100%;
     text-align: center;
-
+    position: relative;
 }
+
+.home_text-2::after {
+    content: "|";
+    position: relative;
+    bottom: 0;
+    opacity: 0;
+    animation: line-appear 1s infinite;
+  }
+  
+  @keyframes line-appear {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
 .tercer-titulo{
     width: fit-content;
     margin: auto;
 }
+
 
 .home_text-3 {
     font-family: 'Cooper Hewitt';
