@@ -77,16 +77,102 @@
     }
 
     .cards--habilidades {
-        transition: box-shadow .5s !important;
+        transition: box-shadow .2s !important;
     }
 
     .cards--habilidades:hover {
         box-shadow: 0 0 10px rgba(162, 162, 162, 0.2);
     }
+
+    .cards--habilidades:hover {
+        box-shadow: 0 0 10px rgba(162, 162, 162, 0.2);
+    }
+
+    .cards--proyectos,
+    .cards--formacion {
+        box-shadow: 0 0 10px rgba(200, 199, 199, 0.2);
+    }
+
+    .enlaces {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-top: #555 2px solid;
+        color: #555;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .enlaces-footer-productos {
+        width: 50%;
+    }
+
+    .enlaces-footer-productos ul li a {
+        text-decoration: none;
+        /* Elimina el subrayado del enlace */
+        color: inherit;
+        /* Hereda el color del texto del contenedor padre */
+    }
+
+    /* Estilos del preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  /* Agrega el efecto de desenfoque */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Cambia el color de fondo según tus preferencias */
+  z-index: 9999;
+  opacity: 1;
+  animation: preloader-fadeOut 0.5s 2s forwards;
+}
+
+.preloader__image {
+  width: 200px;
+  /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+
+@keyframes preloader-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+    @media (max-width: 768px) {
+        .enlaces-footer-productos {
+            width: 100%;
+        }
+    }
 </style>
 
 <body>
-
+    <div class="preloader">
+        <img src="./assets/nuvas img/mi logo.png" alt="Imagen de carga" class="preloader__image" />
+        <div class="preloader__logo"></div>
+    </div>
 
     <header class="header">
         <img src="./assets/nuvas img/mi logo.png" alt="Logo Portafolio" class="logo__header">
@@ -159,14 +245,14 @@
             <div class="container_content-sobreMi">
                 <div class="container_texto-sobreMi">
                     <span class="title_sobreMi">Toledo Alan</span>
-                    <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">"A lo largo de mi
+                    <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">A lo largo de mi
                         trayectoria como desarrollador web, he alcanzado logros significativos. A los 17 años, logré mi
                         primer empleo como desarrollador freelance, lo cual fue un hito importante en mi carrera.
                         Posteriormente, a los 18 años, tuve la emocionante oportunidad de participar en un proyecto de
                         gran magnitud para la escuela técnica Carmen Molina de Llano. Esta experiencia temprana en mi
                         carrera fue un desafío estimulante y una invaluable oportunidad para expandir mis habilidades y
                         conocimientos. Estos logros han reforzado mi pasión por el desarrollo web y me han impulsado a
-                        seguir creciendo en este apasionante campo."!.</span>
+                        seguir creciendo en este apasionante campo.</span>
                 </div>
 
                 <picture class="container_image-sobreMi" data-aos="fade-right">
@@ -331,8 +417,10 @@
 
                     <div class="container_textCard--proyectos">
                         <h2 data-section="proyectos" data-value="title-proyecto1">Certificado Archievement</h2>
-                        <p data-section="proyectos" data-value="info-proyecto1">Curso sobre la inicializacion en el
-                            desarrollo web front end y en habilidades blandas
+                        <p data-section="proyectos" data-value="info-proyecto1">Curso sobre la inicialización en el
+                            desarrollo web front end y en habilidades blandas. Este curso proporciona los conocimientos
+                            necesarios para dar los primeros pasos en el mundo del desarrollo web, centrándose en el
+                            front end.
                         </p>
                     </div>
 
@@ -359,9 +447,10 @@
 
                     <div class="container_textCard--proyectos text-portafolio">
                         <h2 data-section="proyectos" data-value="title-proyecto2"><br>Fundacion construyamos</h2>
-                        <p data-section="proyectos" data-value="info-proyecto2">Mi portafolio web personal, donde se
-                            encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre
-                            mi formación.</p>
+                        <p data-section="proyectos" data-value="info-proyecto2">La Fundación Construyamos en Argentina
+                            también tiene un enfoque en la informática, brindando programas y capacitaciones para
+                            fomentar la inclusión digital y el desarrollo de habilidades tecnológicas en comunidades
+                            vulnerables.</p>
                     </div>
 
                     <div class="container_btn--proyectos">
@@ -386,10 +475,12 @@
                     </div>
 
                     <div class="container_textCard--proyectos">
-                        <h2 data-section="proyectos" data-value="title-proyecto3">Encriptador de Texto</h2>
-                        <p data-section="proyectos" data-value="info-proyecto3">Un ecriptador donde el usuario puede
-                            escribir un texto y el encriptador lo codifica con llaves ya programadas. El encriptador
-                            también permite desencriptar el texto.</p>
+                        <h2 data-section="proyectos" data-value="title-proyecto3">Escuela "Tecnica Carmen Molina De
+                            Llano"</h2>
+                        <p data-section="proyectos" data-value="info-proyecto3">La Escuela Técnica Carmen Molina de
+                            Llano es una institución educativa que ofrece formación técnica en áreas como electrónica,
+                            informática y administración. Ubicada en un entorno urbano, la escuela se dedica a preparar
+                            a sus estudiantes para el mundo laboral y fomentar su desarrollo personal y profesional.</p>
                     </div>
 
                     <div class="container_btn--proyectos">
@@ -568,11 +659,28 @@
                         <i class="fab fa-github social-icon"></i> GitHub
                     </a>
                 </div>
-                <a class="mi-footer-link" href="https://www.example.com">Enlace 1</a>
-                <a class="mi-footer-link" href="https://www.example.com">Enlace 2</a>
-                <a class="mi-footer-link" href="https://www.example.com">Enlace 3</a>
-                <a class="mi-footer-link" href="https://www.example.com">Enlace 4</a>
-                <a class="mi-footer-link" href="https://www.example.com">Enlace 5</a>
+                <div class="enlaces">
+                    <div class="enlaces-footer-productos">
+                        <h1>Productos</h1>
+                        <ul>
+                            <li><a href="link_ecommerce">Ecomerce</a></li>
+                            <li><a href="link_landing_page">Landing Page</a></li>
+                            <li><a href="link_portafolios_personales">Portafolios Personales</a></li>
+                            <li><a href="link_mantenimiento_web">Mantenimiento Web</a></li>
+                        </ul>
+                    </div>
+                    <div class="enlaces-footer-productos">
+                        <h1>Más Detalles Sobre Mi</h1>
+                        <ul>
+                            <li><a href="link_ecommerce">Ecomerce</a></li>
+                            <li><a href="link_landing_page">Landing Page</a></li>
+                            <li><a href="link_portafolios_personales">Portafolios Personales</a></li>
+                            <li><a href="link_mantenimiento_web">Mantenimiento Web</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
             </div>
 
 
@@ -598,6 +706,12 @@
 
     <!-- Mi script -->
     <script src="./script.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.querySelector('.preloader');
+            preloader.style.display = 'none';
+        });
+    </script>
 </body>
 
 </html>
