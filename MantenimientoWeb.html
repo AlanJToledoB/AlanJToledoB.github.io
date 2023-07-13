@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio | Alan Toledo">
+    <meta name="robots" content="index,follow">
+
+    <title>Mi portafolio</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css">
+    <link rel="stylesheet" href="./assets/stylesheet/index.css">
+    <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (min-width: 760px)">
+    <link rel="stylesheet" href="./assets/stylesheet/desktop.css" media="screen and (min-width: 980px)">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/stylesheet/landingPage.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/nuvas img/mi logo.png">
+</head>
+<style>
+    /* Estilos para los enlaces */
+    .social-link {
+        color: #555;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-size: 24px;
+        margin: 5px;
+        font-family: 'Cooper Hewitt';
+    }
+
+    /* Estilos para el hover de los enlaces */
+    .social-link:hover {
+        color: #555;
+    }
+
+    /* Estilos para LinkedIn */
+    .social-link[href^="https://www.linkedin.com/"]:hover {
+        color: #0077B5;
+    }
+
+    /* Estilos para Twitter */
+    .social-link[href^="https://twitter.com/"]:hover {
+        color: #1DA1F2;
+    }
+
+    /* Estilos para Instagram */
+    .social-link[href^="https://www.instagram.com/"]:hover {
+        color: #E4405F;
+    }
+
+    /* Estilos para GitHub */
+    .social-link[href^="https://github.com/"]:hover {
+        color: #333;
+    }
+
+    .mi-footer-link {
+        color: #333;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    /* Estilos para el hover de los enlaces */
+    .mi-footer-link:hover {
+        color: #555;
+    }
+
+    .cards--habilidades {
+        transition: box-shadow .2s !important;
+    }
+
+    .cards--habilidades:hover {
+        box-shadow: 0 0 10px rgba(162, 162, 162, 0.2);
+    }
+
+    .cards--habilidades:hover {
+        box-shadow: 0 0 10px rgba(162, 162, 162, 0.2);
+    }
+
+    .cards--proyectos,
+    .cards--formacion {
+        box-shadow: 0 0 10px rgba(200, 199, 199, 0.2);
+    }
+
+    .enlaces {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-top: #555 2px solid;
+        color: #555;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .enlaces-footer-productos {
+        width: 50%;
+    }
+
+    .enlaces-footer-productos ul li a {
+        text-decoration: none;
+        /* Elimina el subrayado del enlace */
+        color: inherit;
+        /* Hereda el color del texto del contenedor padre */
+        font-size: 15px;
+    }
+
+    /* Estilos del preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  /* Agrega el efecto de desenfoque */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Cambia el color de fondo según tus preferencias */
+  z-index: 9999;
+  opacity: 1;
+  animation: preloader-fadeOut 0.5s 2s forwards;
+}
+
+.preloader__image {
+  width: 200px;
+  /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+
+@keyframes preloader-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.puntos1-proyectos:hover, .puntos2-proyectos:hover{
+    opacity: 0.5;
+}
+    @media (max-width: 768px) {
+        .enlaces-footer-productos {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    
+    
+    <div class="preloader">
+        <img src="./assets/nuvas img/mi logo.png" alt="Imagen de carga" class="preloader__image" />
+        <div class="preloader__logo"></div>
+    </div>
+
+    <header class="header">
+        <img src="./assets/nuvas img/mi logo.png" alt="Logo Portafolio" class="logo__header">
+
+        <nav class="nav_menu not-active">
+            <a href="index.html" data-section="menu" data-value="item2">Inicio</a>
+        </nav>
+
+        <div id="button" class="btn not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <div class="explicacion">
+        <h1>Qué es el Mantenimiento Web</h1>
+        <p>
+          El mantenimiento web es el conjunto de actividades y procesos continuos que se realizan para garantizar el correcto funcionamiento, seguridad y actualización de un sitio web. Consiste en tareas periódicas que ayudan a mantener la calidad, rendimiento y experiencia del usuario en el sitio.
+        </p>
+      
+        <h1>Puntos importantes del Mantenimiento Web</h1>
+        <p>
+          - Actualización de contenido: Mantener el contenido actualizado es esencial para brindar información relevante y precisa a los visitantes. Esto incluye actualizar textos, imágenes, noticias y cualquier otra información presente en el sitio web.
+        </p>
+        <p>
+          - Copias de seguridad regulares: Realizar copias de seguridad periódicas del sitio web es crucial para proteger los datos en caso de pérdida, daño o ataque cibernético. Las copias de seguridad deben guardarse de forma segura y ser fácilmente accesibles para una restauración rápida si es necesario.
+        </p>
+        <p>
+          - Mantenimiento de seguridad: Implementar medidas de seguridad para proteger el sitio web contra ataques maliciosos es fundamental. Esto implica instalar actualizaciones de seguridad, configurar cortafuegos, realizar análisis de vulnerabilidades y mantener sistemas de detección y prevención de intrusiones.
+        </p>
+        <p>
+          - Optimización del rendimiento: Optimizar el rendimiento del sitio web es importante para proporcionar una experiencia fluida y rápida a los visitantes. Esto puede incluir la optimización de la velocidad de carga, la compresión de imágenes, la limpieza del código y la optimización de la base de datos.
+        </p>
+        <p>
+          - Resolución de problemas técnicos: El mantenimiento web implica la detección y solución de problemas técnicos que puedan surgir en el sitio web. Esto puede incluir errores de visualización, enlaces rotos, problemas de compatibilidad con navegadores y otros problemas técnicos relacionados con la funcionalidad del sitio.
+        </p>
+        <p>
+          - Actualización del sistema y software: Mantener actualizados el sistema operativo, los plugins, las bibliotecas y otros componentes utilizados en el sitio web es esencial para garantizar la compatibilidad, seguridad y funcionamiento adecuado.
+        </p>
+        <p>
+          - Monitorización y análisis: Supervisar el rendimiento del sitio web, el tráfico, las métricas y los informes de análisis permite identificar áreas de mejora y tomar decisiones informadas para optimizar aún más el sitio.
+        </p>
+      </div>
+      
+
+    <footer>
+        <div class="contianer--footer">
+            <div class="container_redes-footer">
+                <!-- <a href="https://www.linkedin.com/in/mariana-arias-montoya-b37a311a7/" target="_blank">
+                    <img src="./assets/images/icon-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/mariasmoUN" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub">
+                </a>
+
+                <a href="https://www.instagram.com/mar.am0410/?next=%2F" target="_blank">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram"">
+                </a> -->
+                <div class="redes" id="">
+                    <h1 data-section="contacto" data-value="title">Redes Sociales</h1>
+                </div>
+
+                <div class="social-container">
+
+                    <a class="social-link" href="https://www.linkedin.com/in/alan-joel-toledo-barrientos-6a5353263/">
+                        <i class="fab fa-linkedin social-icon"></i> LinkedIn
+                    </a>
+
+                    <a class="social-link" href="https://twitter.com/AlanJoelTol?t=7hJhyKFEPxGOQbwyTmz1kg&s=08">
+                        <i class="fab fa-twitter social-icon"></i> Twitter
+                    </a>
+
+                    <a class="social-link" href="https://www.instagram.com/_toledo.barrientos/">
+                        <i class="fab fa-instagram social-icon"></i> Instagram
+                    </a>
+
+                    <a class="social-link" href="https://github.com/AlanJToledoB">
+                        <i class="fab fa-github social-icon"></i> GitHub
+                    </a>
+                </div>
+                <div class="enlaces">
+                    <div class="enlaces-footer-productos">
+                        <h1>Productos</h1>
+                        <ul>
+                            <li><a href="Ecomerce.html">Ecomerce</a></li>
+                            <li><a href="LandingPage.html">Landing Page</a></li>
+                            <li><a href="PortafoliosPersonales.html">Portafolios Personales</a></li>
+                            <li><a href="MantenimientoWeb.html">Mantenimiento Web</a></li>
+                        </ul>
+                    </div>
+                    <div class="enlaces-footer-productos">
+                        <h1>Más Detalles Sobre Mi</h1>
+                        <ul>
+                            <li><a href="estudiosFormales.html">Mis Estudios mas formales</a></li>
+                            <li><a href="dondeLlegar.html">Donde Me Gustaria Llegar</a></li>
+                            <li><a href="metodolgia.html">Mi Metodologia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class=" container_text--footer">
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="./script.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.querySelector('.preloader');
+            preloader.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

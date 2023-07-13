@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio | Alan Toledo">
+    <meta name="robots" content="index,follow">
+
+    <title>Mi portafolio</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css">
+    <link rel="stylesheet" href="./assets/stylesheet/index.css">
+    <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (min-width: 760px)">
+    <link rel="stylesheet" href="./assets/stylesheet/desktop.css" media="screen and (min-width: 980px)">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/stylesheet/landingPage.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/nuvas img/mi logo.png">
+</head>
+<style>
+    /* Estilos para los enlaces */
+    .social-link {
+        color: #555;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-size: 24px;
+        margin: 5px;
+        font-family: 'Cooper Hewitt';
+    }
+
+    /* Estilos para el hover de los enlaces */
+    .social-link:hover {
+        color: #555;
+    }
+
+    /* Estilos para LinkedIn */
+    .social-link[href^="https://www.linkedin.com/"]:hover {
+        color: #0077B5;
+    }
+
+    /* Estilos para Twitter */
+    .social-link[href^="https://twitter.com/"]:hover {
+        color: #1DA1F2;
+    }
+
+    /* Estilos para Instagram */
+    .social-link[href^="https://www.instagram.com/"]:hover {
+        color: #E4405F;
+    }
+
+    /* Estilos para GitHub */
+    .social-link[href^="https://github.com/"]:hover {
+        color: #333;
+    }
+
+    .mi-footer-link {
+        color: #333;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    /* Estilos para el hover de los enlaces */
+    .mi-footer-link:hover {
+        color: #555;
+    }
+
+    .cards--habilidades {
+        transition: box-shadow .2s !important;
+    }
+
+    .cards--habilidades:hover {
+        box-shadow: 0 0 10px rgba(162, 162, 162, 0.2);
+    }
+
+    .cards--habilidades:hover {
+        box-shadow: 0 0 10px rgba(162, 162, 162, 0.2);
+    }
+
+    .cards--proyectos,
+    .cards--formacion {
+        box-shadow: 0 0 10px rgba(200, 199, 199, 0.2);
+    }
+
+    .enlaces {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-top: #555 2px solid;
+        color: #555;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .enlaces-footer-productos {
+        width: 50%;
+    }
+
+    .enlaces-footer-productos ul li a {
+        text-decoration: none;
+        /* Elimina el subrayado del enlace */
+        color: inherit;
+        /* Hereda el color del texto del contenedor padre */
+        font-size: 15px;
+    }
+
+    /* Estilos del preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  /* Agrega el efecto de desenfoque */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Cambia el color de fondo según tus preferencias */
+  z-index: 9999;
+  opacity: 1;
+  animation: preloader-fadeOut 0.5s 2s forwards;
+}
+
+.preloader__image {
+  width: 200px;
+  /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+
+@keyframes preloader-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.puntos1-proyectos:hover, .puntos2-proyectos:hover{
+    opacity: 0.5;
+}
+    @media (max-width: 768px) {
+        .enlaces-footer-productos {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    
+    
+    <div class="preloader">
+        <img src="./assets/nuvas img/mi logo.png" alt="Imagen de carga" class="preloader__image" />
+        <div class="preloader__logo"></div>
+    </div>
+
+    <header class="header">
+        <img src="./assets/nuvas img/mi logo.png" alt="Logo Portafolio" class="logo__header">
+
+        <nav class="nav_menu not-active">
+            <a href="index.html" data-section="menu" data-value="item2">Inicio</a>
+        </nav>
+
+        <div id="button" class="btn not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <div class="explicacion">
+        <h1>Qué es un Ecommerce</h1>
+        <p>
+          Un ecommerce, también conocido como tienda en línea o tienda virtual, es un sitio web diseñado para llevar a cabo transacciones de compra y venta de productos o servicios a través de Internet. Es una plataforma digital que permite a los usuarios explorar, seleccionar y adquirir productos de forma conveniente desde la comodidad de sus hogares.
+        </p>
+      
+        <h1>Puntos importantes de un Ecommerce</h1>
+        <p>
+          - Catálogo de productos: Un ecommerce debe contar con un catálogo completo y organizado de productos o servicios disponibles para la venta. Cada producto debe tener una descripción detallada, imágenes de alta calidad y especificaciones relevantes para que los usuarios puedan tomar decisiones informadas.
+        </p>
+        <p>
+          - Proceso de compra intuitivo: Es fundamental que la experiencia de compra sea fácil y rápida. El proceso de selección de productos, agregado al carrito, pago y confirmación de la compra debe ser claro y sencillo de seguir, evitando obstáculos innecesarios que puedan llevar a abandonar la compra.
+        </p>
+        <p>
+          - Diseño atractivo y funcional: Un diseño visualmente atractivo y profesional ayudará a generar confianza en los usuarios y a mejorar la experiencia de navegación. Además, la estructura y la navegación del sitio deben ser claras y facilitar la búsqueda de productos, categorías y la realización de filtros.
+        </p>
+        <p>
+          - Seguridad y confianza: La seguridad de las transacciones y la protección de los datos de los usuarios son aspectos críticos en un ecommerce. Es necesario implementar medidas de seguridad como certificados SSL, métodos de pago confiables y políticas de privacidad claras para generar confianza en los compradores.
+        </p>
+        <p>
+          - Reseñas y valoraciones de productos: Incluir reseñas y valoraciones de otros clientes sobre los productos o servicios puede ayudar a generar confianza y proporcionar información adicional a los usuarios en su proceso de toma de decisiones.
+        </p>
+        <p>
+          - Servicio al cliente: Brindar un buen servicio al cliente es esencial. Proporcionar opciones de contacto, como chat en vivo o soporte por correo electrónico, y responder de manera rápida y eficiente a las consultas y problemas de los usuarios es fundamental para mantener la satisfacción del cliente.
+        </p>
+        <p>
+          - Promociones y descuentos: Ofrecer promociones especiales, descuentos o programas de fidelización puede motivar a los usuarios a realizar compras y mantener su interés en el ecommerce.
+        </p>
+      </div>
+    
+    <footer>
+        <div class="contianer--footer">
+            <div class="container_redes-footer">
+                <!-- <a href="https://www.linkedin.com/in/mariana-arias-montoya-b37a311a7/" target="_blank">
+                    <img src="./assets/images/icon-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/mariasmoUN" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub">
+                </a>
+
+                <a href="https://www.instagram.com/mar.am0410/?next=%2F" target="_blank">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram"">
+                </a> -->
+                <div class="redes" id="">
+                    <h1 data-section="contacto" data-value="title">Redes Sociales</h1>
+                </div>
+
+                <div class="social-container">
+
+                    <a class="social-link" href="https://www.linkedin.com/in/alan-joel-toledo-barrientos-6a5353263/">
+                        <i class="fab fa-linkedin social-icon"></i> LinkedIn
+                    </a>
+
+                    <a class="social-link" href="https://twitter.com/AlanJoelTol?t=7hJhyKFEPxGOQbwyTmz1kg&s=08">
+                        <i class="fab fa-twitter social-icon"></i> Twitter
+                    </a>
+
+                    <a class="social-link" href="https://www.instagram.com/_toledo.barrientos/">
+                        <i class="fab fa-instagram social-icon"></i> Instagram
+                    </a>
+
+                    <a class="social-link" href="https://github.com/AlanJToledoB">
+                        <i class="fab fa-github social-icon"></i> GitHub
+                    </a>
+                </div>
+                <div class="enlaces">
+                    <div class="enlaces-footer-productos">
+                        <h1>Productos</h1>
+                        <ul>
+                            <li><a href="Ecomerce.html">Ecomerce</a></li>
+                            <li><a href="LandingPage.html">Landing Page</a></li>
+                            <li><a href="PortafoliosPersonales.html">Portafolios Personales</a></li>
+                            <li><a href="MantenimientoWeb.html">Mantenimiento Web</a></li>
+                        </ul>
+                    </div>
+                    <div class="enlaces-footer-productos">
+                        <h1>Más Detalles Sobre Mi</h1>
+                        <ul>
+                            <li><a href="estudiosFormales.html">Mis Estudios mas formales</a></li>
+                            <li><a href="dondeLlegar.html">Donde Me Gustaria Llegar</a></li>
+                            <li><a href="metodolgia.html">Mi Metodologia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class=" container_text--footer">
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="./script.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.querySelector('.preloader');
+            preloader.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

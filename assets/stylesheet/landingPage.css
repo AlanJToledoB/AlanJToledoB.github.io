@@ -1,11 +1,11 @@
 
-.explicacion-landingPage{
+.explicacion{
     height: 700px;
     background-color: rgb(23, 23, 23);
     position: relative;
     color: #ffffff;
 }
-.explicacion-landingPage h1{
+.explicacion h1{
     position: relative;
     top: 100px;
     font-size: 28px;
@@ -14,10 +14,28 @@
     margin-left: 50px;
 }
 
-.explicacion-landingPage p{
+.explicacion p{
     position: relative;
     top: 100px;
     font-size: 18px;
     line-height: 1.5;
     margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+    .explicacion{
+        height: 1200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .explicacion{
+        height: 1500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .explicacion{
+        height: 1500px;
+    }
 }
