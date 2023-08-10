@@ -471,10 +471,26 @@ span+span {
 .cards_container--habilidades {
     display: grid;
     grid-template-columns: 13rem 13rem;
-    grid-template-rows: 14rem 14rem 14rem;
+    grid-template-rows: 14rem 14rem;
     gap: 3rem;
     justify-content: center;
+    align-content: center;
     padding-bottom: 5rem;
+    align-items: center;
+}
+.cards--habilidades:nth-child(n+4) {
+    justify-self: end; /* Alinea los elementos desde el sexto en adelante hacia el final */
+}
+.cards_container--habilidades_2{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 13rem 13rem 10rem;
+    grid-template-rows: 10rem;
+    gap: 3rem;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5rem;
+    align-items: center;
 }
 
 .cards--habilidades {
