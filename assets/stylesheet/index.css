@@ -1268,6 +1268,16 @@ footer {
         position:absolute;
         right: 300px;
     }
+          .cards_container--habilidades {
+        display: grid;
+        grid-template-columns: 13rem 13rem;
+        grid-template-rows: 14rem 14rem;
+        gap: 3rem;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 5rem;
+        align-items: center;
+    }
     .cards_container--habilidades_2{
 
         display: grid;
