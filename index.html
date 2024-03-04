@@ -11,8 +11,10 @@
     <title>Toledo Alan | Portafolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Katibeh&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- Librerías -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -26,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    
+
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/ae0fd6f99f.js" crossorigin="anonymous"></script>
 
@@ -108,54 +110,59 @@
     }
 
     /* Estilos del preloader */
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(8px);
-  /* Agrega el efecto de desenfoque */
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Cambia el color de fondo según tus preferencias */
-  z-index: 9999;
-  opacity: 1;
-  animation: preloader-fadeOut 0.5s 2s forwards;
-}
+    .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(8px);
+        /* Agrega el efecto de desenfoque */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Cambia el color de fondo según tus preferencias */
+        z-index: 9999;
+        opacity: 1;
+        animation: preloader-fadeOut 0.5s 2s forwards;
+    }
 
-.preloader__image {
-  width: 200px;
-  /* Ajusta el tamaño de la imagen según tus necesidades */
-  height: auto;
-  margin-bottom: 20px;
-}
+    .preloader__image {
+        width: 200px;
+        /* Ajusta el tamaño de la imagen según tus necesidades */
+        height: auto;
+        margin-bottom: 20px;
+    }
 
 
 
-@keyframes preloader-rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+    @keyframes preloader-rotate {
+        0% {
+            transform: rotate(0deg);
+        }
 
-@keyframes preloader-fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.puntos1-proyectos:hover, .puntos2-proyectos:hover{
-    opacity: 0.5;
-}
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes preloader-fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .puntos1-proyectos:hover,
+    .puntos2-proyectos:hover {
+        opacity: 0.5;
+    }
+
     @media (max-width: 768px) {
         .enlaces-footer-productos {
             width: 100%;
@@ -196,7 +203,7 @@
                     <p class="home_text-1" data-section="home" data-value="home_text-1">Hola! Soy</p>
                     <p class="home_text-2">Alan Toledo</p>
 
-                    
+
                 </div>
 
                 <div class="tercer-titulo">
@@ -224,18 +231,19 @@
 
         <!-- Sobre mí -->
         <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos1-proyectos">
-        
+
         <section class="sobreMi" id="sobreMi">
-            
+
 
             <h1 data-section="sobre-mi" data-value="title">Sobre mí</h1>
 
             <div class="container_content-sobreMi">
-                
+
                 <div class="container_texto-sobreMi">
 
                     <span class="title_sobreMi">Toledo Alan</span>
-                    <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi" data-aos="fade-left">                     <img  src="assets/nuvas img/pin.png" alt=""> <label for=""> </label> A lo largo de mi
+                    <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi" data-aos="fade-left">
+                        <img src="assets/nuvas img/pin.png" alt=""> <label for=""> </label> A lo largo de mi
                         trayectoria como desarrollador web, he alcanzado logros significativos. A los 17 años, logré mi
                         primer empleo como desarrollador freelance, lo cual fue un hito importante en mi carrera.
                         Posteriormente, a los 18 años, tuve la emocionante oportunidad de participar en un proyecto de
@@ -247,8 +255,7 @@
 
                 <picture class="container_image-sobreMi" data-aos="fade-right">
 
-                    <img class="image_sobreMi" src="./images/yo perfil2.jpg"
-                        alt="Ilustración mujer y café">
+                    <img class="image_sobreMi" src="./images/yo perfil2.jpg" alt="Ilustración mujer y café">
                 </picture>
 
             </div>
@@ -257,62 +264,75 @@
                     <button class="cv_button" data-section="home" data-value="cv_button">Descargar CV</button>
                 </a>
             </div>
-            
+
         </section>
 
         <!-- Habilidades -->
         <section class="habilidades" id="habilidades">
             <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos1-proyectos">
             <img src="./assets/nuvas img/decoracion.png" alt="Decoración puntos" class="puntos2-proyectos">
-            <h1 data-section="habilidades" class="brd-top" data-value="title">Habilidades para el desarrollo Front-End</h1>
+            <h1 data-section="habilidades" class="brd-top" data-value="title">Habilidades para el desarrollo Front-End
+            </h1>
 
 
             <div class="cards_container--habilidades">
                 <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-avanzado.png" alt="Icono de HTML" class="original_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-avanzado.png" alt="Icono de HTML"
+                        class="original_image">
                     <img src="./assets/images/icon-html.png" alt="Otra imagen HTML" class="hover_image">
                     <p>HTML 5</p>
                 </div>
 
                 <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-intermedio.png" alt="Icono de HTML" class="original_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-intermedio.png" alt="Icono de HTML"
+                        class="original_image">
                     <img src="./assets/images/icon-css.png" alt="Otra imagen HTML" class="hover_image">
                     <p>CSS 3</p>
                 </div>
 
                 <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-basico.png" alt="Icono de HTML" class="original_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-basico.png" alt="Icono de HTML"
+                        class="original_image">
                     <img src="./assets/images/icon-tailwind.png" alt="Otra imagen HTML" class="hover_image">
                     <p>Tailwind</p>
                 </div>
 
                 <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-avanzado.png" alt="Icono de HTML" class="original_image">
-                    <img src="./assets/nuvas img/logos-Tecnologias/bootstrap.png" alt="Otra imagen HTML" class="hover_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-avanzado.png" alt="Icono de HTML"
+                        class="original_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/bootstrap.png" alt="Otra imagen HTML"
+                        class="hover_image">
                     <p>Bootstrap</p>
                 </div>
 
                 <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-basico.png" alt="Icono de HTML" class="original_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-basico.png" alt="Icono de HTML"
+                        class="original_image">
                     <img src="./assets/images/icon-js.png" alt="Otra imagen HTML" class="hover_image">
                     <p>JavaScript</p>
                 </div>
 
                 <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-basico.png" alt="Icono de HTML" class="original_image">
-                    <img src="./assets/nuvas img/logos-Tecnologias/jquery.png" alt="Otra imagen HTML" class="hover_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-basico.png" alt="Icono de HTML"
+                        class="original_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/jquery.png" alt="Otra imagen HTML"
+                        class="hover_image">
                     <p>Jquery</p>
                 </div>
 
                 <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-basico.png" alt="Icono de HTML" class="original_image">
-                    <img src="./assets/nuvas img/logos-Tecnologias/React.svg" alt="Otra imagen HTML" class="hover_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-basico.png" alt="Icono de HTML"
+                        class="original_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/React.svg" alt="Otra imagen HTML"
+                        class="hover_image">
                     <p>React</p>
                 </div>
 
                 <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-avanzado.png" alt="Icono de HTML" class="original_image">
-                    <img src="./assets/nuvas img/logos-Tecnologias/Photoshop.png" alt="Otra imagen HTML" class="hover_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-avanzado.png" alt="Icono de HTML"
+                        class="original_image">
+                    <img src="./assets/nuvas img/logos-Tecnologias/Photoshop.png" alt="Otra imagen HTML"
+                        class="hover_image">
                     <p>phothoshop</p>
                 </div>
             </div>
@@ -320,35 +340,44 @@
 
 
         <section class="habilidades" id="habilidades">
-            <h1 data-section="habilidades" class="brd-top" data-value="title">Habilidades para el desarrollo Back-End</h1>
+            <h1 data-section="habilidades" class="brd-top" data-value="title">Habilidades para el desarrollo Back-End
+            </h1>
 
             <div class="cards_container--habilidades ">
                 <div class="cards_container--habilidades_2">
 
-                    
-                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-intermedio.png" alt="Icono de HTML" class="original_image">
-                    <img src="./assets/nuvas img/logos-Tecnologias/php.png" alt="Otra imagen HTML" class="hover_image">
-                    <p>php</p>
-                </div>  
 
-                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-intermedio.png" alt="Icono de HTML" class="original_image">
-                    <img src="./assets/nuvas img/logos-Tecnologias/laravel.png" alt="Otra imagen HTML" class="hover_image">
-                    <p>Laravel</p>
-                </div>
+                    <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                        <img src="./assets/nuvas img/logos-Tecnologias/progreso-intermedio.png" alt="Icono de HTML"
+                            class="original_image">
+                        <img src="./assets/nuvas img/logos-Tecnologias/php.png" alt="Otra imagen HTML"
+                            class="hover_image">
+                        <p>php</p>
+                    </div>
 
-                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-avanzado.png" alt="Icono de HTML" class="original_image">
-                    <img src="./assets/nuvas img/logos-Tecnologias/Sql.png" alt="Otra imagen HTML" class="hover_image">
-                    <p>My Sql</p>
-                </div>
+                    <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                        <img src="./assets/nuvas img/logos-Tecnologias/progreso-intermedio.png" alt="Icono de HTML"
+                            class="original_image">
+                        <img src="./assets/nuvas img/logos-Tecnologias/laravel.png" alt="Otra imagen HTML"
+                            class="hover_image">
+                        <p>Laravel</p>
+                    </div>
 
-                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
-                    <img src="./assets/nuvas img/logos-Tecnologias/progreso-avanzado.png" alt="Icono de HTML" class="original_image">
-                    <img src="./assets/nuvas img/logos-Tecnologias/excel-logo.png" alt="Otra imagen HTML" class="hover_image">
-                    <p>Excel</p>
-                </div>
+                    <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                        <img src="./assets/nuvas img/logos-Tecnologias/progreso-avanzado.png" alt="Icono de HTML"
+                            class="original_image">
+                        <img src="./assets/nuvas img/logos-Tecnologias/Sql.png" alt="Otra imagen HTML"
+                            class="hover_image">
+                        <p>My Sql</p>
+                    </div>
+
+                    <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                        <img src="./assets/nuvas img/logos-Tecnologias/progreso-avanzado.png" alt="Icono de HTML"
+                            class="original_image">
+                        <img src="./assets/nuvas img/logos-Tecnologias/excel-logo.png" alt="Otra imagen HTML"
+                            class="hover_image">
+                        <p>Excel</p>
+                    </div>
 
                 </div>
 
@@ -520,13 +549,43 @@
                                 Ver
                             </button>
                         </a>
-                         <a href="https://github.com/mariasmoUN/Juego-del-Ahorcado" target="_blank">
+                        <a href="https://github.com/mariasmoUN/Juego-del-Ahorcado" target="_blank">
                             <button class="btn_repo">
                                 Repositorio
                             </button>
-                        </a> 
+                        </a>
                     </div>
                 </div>
+
+
+                <div class="cards--proyectos card_JuegoAhorcado" data-aos="zoom-in-up"
+                    data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/nuvas img/proyectos/mantenimiento.png" alt="Proyecto: Juego del ahorcado">
+                    </div>
+
+                    <div class="container_textCard--proyectos">
+                        <h2 data-section="proyectos" data-value="title-proyecto1">Mantenimiento Port</h2>
+                        <p data-section="proyectos" data-value="info-proyecto1">Un juego donde el usuario debe adivinar
+                            la palabra secreta con un cierto número de oportunidades. La palabra se escoge de forma
+                            aleatoria por el programa y el usuario perderá en el momento en que la horca se complete.
+                        </p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="#" target="_blank">
+                            <button class="btn_demo">
+                                Ver
+                            </button>
+                        </a>
+                        <a href="https://github.com/mariasmoUN/Juego-del-Ahorcado" target="_blank">
+                            <button class="btn_repo">
+                                Repositorio
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
 
                 <div class="cards--proyectos card_portafolio" data-aos="zoom-in-up"
                     data-aos-anchor-placement="center-bottom">
@@ -564,7 +623,66 @@
 
                     <div class="container_textCard--proyectos">
                         <h2 data-section="proyectos" data-value="title-proyecto3">Gestor De Perfiles</h2>
-                        <p data-section="proyectos" data-value="info-proyecto3">Un administrador de perfil web: acceso rápido a tus enlaces personales para compartir con otros y mostrar tu presencia en diferentes plataformas en línea.</p>
+                        <p data-section="proyectos" data-value="info-proyecto3">Un administrador de perfil web: acceso
+                            rápido a tus enlaces personales para compartir con otros y mostrar tu presencia en
+                            diferentes plataformas en línea.</p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="https://alanjtoledob.github.io/gestor_perfiles/" target="_blank">
+                            <button class="btn_demo">
+                                Ver
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/mariasmoUN/Encriptador-de-texto" target="_blank">
+                            <button class="btn_repo">
+                                Repositorio
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="cards--proyectos card_encriptador" data-aos="zoom-in-up"
+                    data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/nuvas img/proyectos/smartLock.png" alt="Proyecto: Encriptador">
+                    </div>
+
+                    <div class="container_textCard--proyectos">
+                        <h2 data-section="proyectos" data-value="title-proyecto3">SmartLock</h2>
+                        <p data-section="proyectos" data-value="info-proyecto3">SmartLock es un proyecto de seguridad
+                            del hogar en el que quisimos desempeñar los conceptos más usados de la informática.</p>
+                    </div>
+
+                    <div class="container_btn--proyectos">
+                        <a href="https://alanjtoledob.github.io/gestor_perfiles/" target="_blank">
+                            <button class="btn_demo">
+                                Ver
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/mariasmoUN/Encriptador-de-texto" target="_blank">
+                            <button class="btn_repo">
+                                Repositorio
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="cards--proyectos card_encriptador" data-aos="zoom-in-up"
+                    data-aos-anchor-placement="center-bottom">
+                    <div class="container_imgCard--proyectos">
+                        <img src="./assets/nuvas img/proyectos/galeria de edicion.jpg" alt="Proyecto: Encriptador">
+                    </div>
+
+                    <div class="container_textCard--proyectos">
+                        <h2 data-section="proyectos" data-value="title-proyecto3">Galeria de edicion</h2>
+                        <p data-section="proyectos" data-value="info-proyecto3">Un administrador de perfil web: acceso
+                            rápido a tus enlaces personales para compartir con otros y mostrar tu presencia en
+                            diferentes plataformas en línea.</p>
                     </div>
 
                     <div class="container_btn--proyectos">
@@ -596,7 +714,8 @@
                             contacto contigo lo antes posible.</p>
                     </div>
 
-                    <form id="form" class="form-contact" name="contacto-portafolio"  action="https://formsubmit.co/alanjoeltoledobarrientos@gmail.com" method="POST">
+                    <form id="form" class="form-contact" name="contacto-portafolio"
+                        action="https://formsubmit.co/alanjoeltoledobarrientos@gmail.com" method="POST">
                         <input id="nombre" type="text" name="name" placeholder="Nombre" required>
                         <input id="email" type="email" name="email" placeholder="E-mail" required>
                         <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje | Message"
@@ -703,25 +822,25 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-$(document).ready(function() {
-    // Ocultamos las imágenes hover al cargar la página
-    $('.hover_image').css('opacity', 0);
-    
-    // Añadimos la función hover para mostrar y ocultar las imágenes
-    $('.cards--habilidades').hover(
-        function() {
-            $(this).find('.original_image').css('opacity', 0); // Desvanecer suavemente la imagen original
-            $(this).find('.hover_image').css('opacity', 1); // Mostrar suavemente la imagen de hover
-        },
-        function() {
-            $(this).find('.hover_image').css('opacity', 0); // Desvanecer suavemente la imagen de hover
-            $(this).find('.original_image').css('opacity', 1); // Mostrar suavemente la imagen original
-        }
-    );
-});
+        $(document).ready(function () {
+            // Ocultamos las imágenes hover al cargar la página
+            $('.hover_image').css('opacity', 0);
+
+            // Añadimos la función hover para mostrar y ocultar las imágenes
+            $('.cards--habilidades').hover(
+                function () {
+                    $(this).find('.original_image').css('opacity', 0); // Desvanecer suavemente la imagen original
+                    $(this).find('.hover_image').css('opacity', 1); // Mostrar suavemente la imagen de hover
+                },
+                function () {
+                    $(this).find('.hover_image').css('opacity', 0); // Desvanecer suavemente la imagen de hover
+                    $(this).find('.original_image').css('opacity', 1); // Mostrar suavemente la imagen original
+                }
+            );
+        });
 
     </script>
-    
+
 </body>
 
 </html>
