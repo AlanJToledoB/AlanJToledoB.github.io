@@ -69,7 +69,7 @@ h1{
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10000;
     transition: .5s;
 }
 
@@ -1265,18 +1265,23 @@ footer {
 
   @media (max-width: 500px) {
     .texto_sobreMi{
-        left: 50px;
 
+        margin: auto;
+        position: initial;
     }
-    .container_image-sobreMi{
-        left: 0px;
+    .container_image-sobreMi {
+        position:initial;
+    }
+    .sobreMi{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .image_sobreMi{
+        width: 65%;
+        margin: auto;
+    }
 
-    }
-    .ping-perfil{
-        width: 30px;
-        position:absolute;
-        right: 300px;
-    }
     .cards_container--habilidades {
         display: grid;
         grid-template-columns: 13rem 13rem;
