@@ -639,7 +639,7 @@ span+span {
 .formacion {
     background-color: var(--eerie-black);
     width: 100%;
-    height: auto;
+
 }
 
 .formacion h1 {
@@ -731,12 +731,21 @@ img.logo-sena {
     padding: 6rem 0 5rem 0;
 }
 
+.proyectos1
+
 .puntos1-proyectos,
 .puntos2-proyectos {
     display: none;
 }
 
 .cards_container--proyectos {
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 600px 600px;
+}
+
+.cards_container--proyectos2{
     margin-bottom: 5rem;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -1124,6 +1133,12 @@ footer {
 }
 
 @media (max-width: 900px) {
+    .cards_container--proyectos2{
+        margin-bottom: 5rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 500px;
+    }
     .home_text-1 {
         font-family: 'Cooper Hewitt';
         color: var(--white);
@@ -1170,6 +1185,10 @@ footer {
         padding: 4rem 0 2.5rem 0;
         font-size: 3rem;
     }
+    .puntos1-proyectos,
+.puntos2-proyectos {
+    display: none;
+}
   }
 
   @media (max-width: 700px) {
