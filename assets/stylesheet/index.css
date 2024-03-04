@@ -1265,7 +1265,7 @@ footer {
 
   @media (max-width: 500px) {
     .texto_sobreMi{
-
+        width: 90%;
         margin: auto;
         position: initial;
     }
@@ -1284,8 +1284,8 @@ footer {
 
     .cards_container--habilidades {
         display: grid;
-        grid-template-columns: 13rem 13rem;
-        grid-template-rows: 14rem 14rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
         gap: 3rem;
         justify-content: center;
         align-content: center;
@@ -1296,8 +1296,8 @@ footer {
     .cards_container--habilidades_2{
 
         display: grid;
-        grid-template-columns: 13rem 13rem ;
-        grid-template-rows: 15rem 15rem;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto;
         gap: 3rem;
         justify-content: center;
         margin: auto;
